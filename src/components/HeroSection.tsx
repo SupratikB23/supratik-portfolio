@@ -2,7 +2,7 @@ import { Phone, Mail, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import heroBackground from '@/assets/hero-bg.jpg';
-import profileImage from '@/assets/profile-placeholder.jpg';
+import profileImage from '@/assets/profile-image.jpg';
 const HeroSection = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden" style={{
     backgroundImage: `url(${heroBackground})`,
