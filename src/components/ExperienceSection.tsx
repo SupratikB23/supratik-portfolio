@@ -69,7 +69,7 @@ const ExperienceSection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8">
-          {experiences.map((exp, index) => (
+          {experiences.sort((a, b) => (b.current ? 1 : 0) - (a.current ? 1 : 0)).map((exp, index) => (
             <Card 
               key={`${exp.title}-${exp.organization}`}
               className="border-border hover:border-primary transition-all duration-500 hover:shadow-glow-primary animate-fade-in"
