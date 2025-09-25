@@ -5,7 +5,7 @@ const SkillsSection = () => {
   const skillCategories = [{
     title: 'Programming Languages',
     icon: Code,
-    skills: ['Python', 'Objective-C', 'C++', 'SQL'],
+    skills: ['Python', 'Objective-C', 'C++', 'SQL', 'MATLAB'],
     color: 'text-primary'
   }, {
     title: 'Frameworks & Libraries',
