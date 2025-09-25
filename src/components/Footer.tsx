@@ -1,11 +1,8 @@
 import { Github, Linkedin, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-background border-t border-border py-12">
+  return <footer className="bg-background border-t border-border py-12">
       <div className="container mx-auto px-6">
         <div className="text-center space-y-8">
           {/* Main Footer Content */}
@@ -13,27 +10,15 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-foreground">
               Supratik Bhowal
             </h3>
-            <p className="text-muted-foreground max-w-md mx-auto">
-              AI & ML Enthusiast | Deep Learning Researcher | Open Source Contributor
-            </p>
+            
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
-              onClick={() => window.open('#', '_blank')}
-            >
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary transition-colors duration-300" onClick={() => window.open('#', '_blank')}>
               <Linkedin className="h-5 w-5" />
             </Button>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
-              onClick={() => window.open('#', '_blank')}
-            >
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary transition-colors duration-300" onClick={() => window.open('#', '_blank')}>
               <Github className="h-5 w-5" />
             </Button>
           </div>
@@ -51,8 +36,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

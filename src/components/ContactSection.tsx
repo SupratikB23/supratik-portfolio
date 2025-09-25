@@ -133,18 +133,7 @@ const ContactSection = () => {
         </div>
 
         {/* Social Media Links */}
-        <div className="mt-16 text-center">
-          <div className="flex justify-center space-x-6">
-            <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary hover:text-primary-foreground transition-all duration-300" onClick={() => window.open('#', '_blank')}>
-              <Linkedin className="h-5 w-5 mr-2" />
-              LinkedIn
-            </Button>
-            <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary hover:text-primary-foreground transition-all duration-300" onClick={() => window.open('#', '_blank')}>
-              <Github className="h-5 w-5 mr-2" />
-              GitHub
-            </Button>
-          </div>
-        </div>
+        
       </div>
     </section>;
 };
