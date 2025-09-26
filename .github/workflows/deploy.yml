@@ -1,4 +1,4 @@
-name: Build & Deploy Vite React Portfolio
+name: Build & Deploy Portfolio
 
 on:
   push:
@@ -6,10 +6,10 @@ on:
       - main
 
 permissions:
-  contents: write  # allows pushing to gh-pages
+  contents: write
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,11 +28,12 @@ jobs:
       - name: Clean previous build
         run: rm -rf dist
 
-      - name: Build project
+      - name: Build Vite project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages (force full overwrite)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          force_orphan: true   # 👈 ensures full overwrite
