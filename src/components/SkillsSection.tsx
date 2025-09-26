@@ -63,10 +63,7 @@ const SkillsSection = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Specialized in <span className="text-primary">AI & Machine Learning</span>
               </h3>
-              <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-                With a strong focus on deep learning architectures, neural networks, and real-time signal processing, 
-                I bring both theoretical knowledge and practical implementation skills to every project.
-              </p>
+              <p className="text-muted-foreground text-lg max-w-3xl mx-auto">With a strong focus on Deep Learning architectures, Neural Networks, Machine Learning problems and hypothesis, I bring both theoretical knowledge and practical implementation skills to every project.</p>
             </CardContent>
           </Card>
         </div>
