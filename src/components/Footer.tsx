@@ -14,14 +14,7 @@ const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-4">
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary transition-colors duration-300" onClick={() => window.open('#', '_blank')}>
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-primary transition-colors duration-300" onClick={() => window.open('#', '_blank')}>
-              <Github className="h-5 w-5" />
-            </Button>
-          </div>
+          
 
           {/* Copyright */}
           <div className="pt-8 border-t border-border space-y-2">
