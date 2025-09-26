@@ -119,10 +119,7 @@ const ContactSection = () => {
                       and innovative projects in AI and machine learning.
                     </p>
                     
-                    <Button className="w-full bg-primary hover:bg-primary/80 text-primary-foreground shadow-glow-primary hover:shadow-glow-accent transition-all duration-300" onClick={() => window.open('mailto:supratikbhowal23@gmail.com', '_blank')}>
-                      <Send className="h-4 w-4 mr-2" />
-                      Send Message
-                    </Button>
+                    
                   </div>
                 </CardContent>
               </Card>
